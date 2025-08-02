@@ -1,6 +1,8 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const { initModels } = require("./models/init-models");
+import express from "express";
+import bodyParser from "body-parser";
+import { initModels } from "./models/init-models.js";
+import cors from "cors";
+
 const app = express();
 const port = 3001;
 
@@ -9,11 +11,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // parse application/json
 app.use(bodyParser.json());
 
-const { Users } = initModels();
-const { Platforms } = initModels();
-const { Shipment } = initModels();
+const { Users, Platforms, Shipment } = initModels();
 
-const cors = require("cors");
 app.use(cors());
 
 //AQUI SE HACEN TODAS LAS CONSULTAS A LA BASE DE DATOS

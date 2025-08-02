@@ -1,5 +1,6 @@
-const Sequelize = require("sequelize");
-module.exports = (sequelize, DataTypes) => {
+import Sequelize from "sequelize";
+
+export default (sequelize, DataTypes) => {
   return users.init(sequelize, DataTypes);
 };
 

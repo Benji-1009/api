@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `app`
+-- Base de datos: `sql10793213`
 --
 
 -- --------------------------------------------------------

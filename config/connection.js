@@ -1,4 +1,4 @@
-const { Sequelize } = require('sequelize');
+import { Sequelize } from 'sequelize';
 // Conexión a MySQL
 const sequelize = new Sequelize('app', 'root', '', {
   host: 'localhost',
@@ -6,4 +6,4 @@ const sequelize = new Sequelize('app', 'root', '', {
   port: 3306, // Cambia a 3307 si usas XAMPP con MySQL en otro puerto
   logging: false, // Desactiva logs en consola (opcional)
 });
-module.exports = sequelize;
+export default sequelize;
